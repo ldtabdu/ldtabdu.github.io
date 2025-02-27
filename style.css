@@ -1,0 +1,359 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 20px 0;
+  background: url('header-bg.jpg') no-repeat center center/cover;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.running-text {
+  position: absolute;
+  right: 10px;
+  bottom: -30px; /* Bắt đầu từ dưới */
+  font-size: 16px;
+  font-weight: bold;
+  color: yellow;
+  white-space: nowrap;
+  animation: moveUp 5s linear infinite;
+}
+
+@keyframes moveUp {
+  from {
+    bottom: -30px;
+    opacity: 0;
+  }
+  to {
+    bottom: 100%;
+    opacity: 1;
+  }
+}
+h3 {
+  color: rgb(93, 0, 151);
+  text-transform: uppercase;
+  font-size: larger;
+  font-weight: 2000;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+h3:hover {
+  color: rgb(237, 66, 94);
+}
+.img-container {
+  background-color: rgba(95, 238, 176, 0.827);
+  padding-left: 20px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động */
+}
+
+.img,
+.avt {
+  width: 170px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 105px;
+  transition: all 0.3s ease;
+}
+.img-container:hover {
+  box-shadow: 0px 4px 10px rgba(248, 83, 83, 0.896);
+  transform: translateY(-5px);
+}
+.title-container {
+  padding: 0 30px;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+}
+.title-container h1,
+.title-container h2 {
+  color: rgb(255, 255, 255);
+  line-height: 1.5px;
+  transition: all 0.3s ease;
+}
+.title-container h1 {
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 1000;
+  text-transform: uppercase;
+  margin-top: auto;
+}
+.title-container h1:hover {
+  color: rgb(6, 118, 182);
+  transform: translateY(-5px);
+}
+.title-container h2 {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  margin-bottom: 80px;
+}
+.container {
+  padding: 20px;
+  background-color: whitesmoke;
+  display: flex;
+}
+.sider,
+.content {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+}
+.sider {
+  width: calc(40% - 20px);
+  background-color: rgb(162, 184, 255);
+  margin-right: 20px;
+}
+.content {
+  flex-grow: 1;
+  padding-top: 20px;
+  line-height: 1.1;
+}
+.content ul {
+  background-color: whitesmoke;
+}
+.content ul li {
+  line-height: 1.7;
+  list-style-type: square;
+}
+.tag-content {
+  padding: 20px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.tag-content ul {
+  margin: 0;
+  padding: 0;
+}
+.style_symbols {
+  list-style-type: none;
+  line-height: 2;
+  display: inline-block;
+  font-size: 17px;
+}
+.style_symbols a {
+  color: wheat;
+  font-weight: 800;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+}
+.style_symbols a:hover {
+  color: rgba(248, 83, 83, 0.896);
+}
+.tag-fill {
+  color: wheat;
+  background-color: gray;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  text-align: center;
+  padding: 8px;
+  font-size: 20px;
+  margin-left: -20px;
+}
+.tag-fill:hover {
+  background-color: rgba(95, 238, 176, 0.827);
+  color: black;
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.tag-content .text-content ul {
+  margin-top: 12px;
+}
+.tag-content .text-content li {
+  list-style-type: square;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.tag {
+  display: grid;
+  place-items: center;
+  color: wheat;
+  background-color: gray;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  padding: 7px 100px;
+  width: fit-content;
+  height: auto;
+}
+.tag:hover {
+  background-color: rgba(95, 238, 176, 0.827);
+  color: black;
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.style-year {
+  font-weight: 800;
+  color: grey;
+  margin: 20px 1px;
+  margin-top: 5px;
+  margin-bottom: -10px;
+}
+.style-year:hover {
+  color: rgba(248, 83, 83, 0.896);
+}
+.style-job {
+  font-weight: 200;
+  font-size: small;
+  margin-top: -10px;
+}
+.certificate-img {
+  margin-top: 10px;
+}
+.certificate-img img {
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.certificate-img img:hover {
+  transform: scale(1.8);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+.menu {
+  position: sticky;
+  top: 0;
+  background: #333;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.menu ul li {
+  display: inline;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.menu ul li a:hover {
+  background: #555;
+  border-radius: 5px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.buttons-container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.back-to-top {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s, transform 0.2s;
+  margin: 0 10px;
+}
+
+.back-to-top:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+
+.buttons-container button, 
+.buttons-container a.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.buttons-container button:hover, 
+.buttons-container a.download-btn:hover {
+  background: linear-gradient(135deg, #218838, #1e7e34);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+.buttons-container button:active, 
+.buttons-container a.download-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.buttons-container .download-btn i {
+  font-size: 18px;
+}
+
+#endweb {
+  height: 10px;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.marquee p {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  animation: marquee 10s linear infinite;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
